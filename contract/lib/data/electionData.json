@@ -1,0 +1,11 @@
+{
+  "registrarDistinguishedName": "Brasil Registrar",
+  "registrarOrg": "Brasil Org",
+  "registrarLocality": "America do Sul",
+  "registrarState": "Todos",
+  "registrarCountry": "Brasil",
+  "registrarPrecinctNums": [1,2,3],
+  "electionName": "Eleicao 2020",
+  "electionCountry": "Brasil",
+  "electionYear": 2020
+}

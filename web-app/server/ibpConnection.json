@@ -1,0 +1,45 @@
+{
+    "name": "votermspprofile",
+    "description": "Network on IBP v2",
+    "version": "1.0.0",
+    "client": {
+        "organization": "votermsp"
+    },
+    "organizations": {
+        "votermsp": {
+            "mspid": "votermsp",
+            "certificateAuthorities": [
+                "n73e15a-voterca.iks-tse3-0dc49387a5c1dae4a2676d4bcb51a3a5-0000.us-south.containers.appdomain.cloud:7054"
+            ],
+            "peers": [
+                "n73e15a-voterpeer.iks-tse3-0dc49387a5c1dae4a2676d4bcb51a3a5-0000.us-south.containers.appdomain.cloud:7051"
+            ]
+        }
+    },
+    "peers": {
+        "n73e15a-voterpeer.iks-tse3-0dc49387a5c1dae4a2676d4bcb51a3a5-0000.us-south.containers.appdomain.cloud:7051": {
+            "url": "grpcs://n73e15a-voterpeer.iks-tse3-0dc49387a5c1dae4a2676d4bcb51a3a5-0000.us-south.containers.appdomain.cloud:7051",
+            "tlsCACerts": {
+                "pem": "-----BEGIN CERTIFICATE-----\nMIIB/jCCAaSgAwIBAgIUEvKYtNxQZV9Zd35hLwOleedwmX4wCgYIKoZIzj0EAwIw\nXTELMAkGA1UEBhMCVVMxFzAVBgNVBAgTDk5vcnRoIENhcm9saW5hMRQwEgYDVQQK\nEwtIeXBlcmxlZGdlcjEPMA0GA1UECxMGRmFicmljMQ4wDAYDVQQDEwV0bHNjYTAe\nFw0yMDEwMDgwMTQwMDBaFw0zNTEwMDUwMTQwMDBaMF0xCzAJBgNVBAYTAlVTMRcw\nFQYDVQQIEw5Ob3J0aCBDYXJvbGluYTEUMBIGA1UEChMLSHlwZXJsZWRnZXIxDzAN\nBgNVBAsTBkZhYnJpYzEOMAwGA1UEAxMFdGxzY2EwWTATBgcqhkjOPQIBBggqhkjO\nPQMBBwNCAAR5xQelo991XGB6SqNPsp1S5eBI5qe3Sd4HJRHbyUbhRrNMZ5Hsx9IJ\nd+kzxaE32rHDjTKKhrBvVMzCM8bhIoDso0IwQDAOBgNVHQ8BAf8EBAMCAQYwDwYD\nVR0TAQH/BAUwAwEB/zAdBgNVHQ4EFgQUr/DqhoZpq1obcmd0pgF5E7sDdi0wCgYI\nKoZIzj0EAwIDSAAwRQIhAKXA2vx+XF+W1ghwbnN4ORuoDx+R5D2RybHGc3DcR8KU\nAiBiRwFYufGfwQMVv+dZ3K6W9AECTWhXW34rO1kHZF3dyQ==\n-----END CERTIFICATE-----\n"
+            },
+            "grpcOptions": {
+                "ssl-target-name-override": "n73e15a-voterpeer.iks-tse3-0dc49387a5c1dae4a2676d4bcb51a3a5-0000.us-south.containers.appdomain.cloud"
+            }
+        }
+    },
+    "certificateAuthorities": {
+        "n73e15a-voterca.iks-tse3-0dc49387a5c1dae4a2676d4bcb51a3a5-0000.us-south.containers.appdomain.cloud:7054": {
+            "url": "https://n73e15a-voterca.iks-tse3-0dc49387a5c1dae4a2676d4bcb51a3a5-0000.us-south.containers.appdomain.cloud:7054",
+            "caName": "ca",
+            "tlsCACerts": {
+                "pem": [
+                    "-----BEGIN CERTIFICATE-----\nMIIDZzCCAw+gAwIBAgIRAPwW+sX9qXv2MnuyCp393kQwCgYIKoZIzj0EAwIwgccx\nCzAJBgNVBAYTAlVTMRcwFQYDVQQIEw5Ob3J0aCBDYXJvbGluYTEPMA0GA1UEBxMG\nRHVyaGFtMQwwCgYDVQQKEwNJQk0xEzARBgNVBAsTCkJsb2NrY2hhaW4xazBpBgNV\nBAMTYm43M2UxNWEtdm90ZXJjYS5pa3MtdHNlMy0wZGM0OTM4N2E1YzFkYWU0YTI2\nNzZkNGJjYjUxYTNhNS0wMDAwLnVzLXNvdXRoLmNvbnRhaW5lcnMuYXBwZG9tYWlu\nLmNsb3VkMB4XDTIwMTAwODAxNDQ1OVoXDTMwMTAwNjAxNDQ1OVowgccxCzAJBgNV\nBAYTAlVTMRcwFQYDVQQIEw5Ob3J0aCBDYXJvbGluYTEPMA0GA1UEBxMGRHVyaGFt\nMQwwCgYDVQQKEwNJQk0xEzARBgNVBAsTCkJsb2NrY2hhaW4xazBpBgNVBAMTYm43\nM2UxNWEtdm90ZXJjYS5pa3MtdHNlMy0wZGM0OTM4N2E1YzFkYWU0YTI2NzZkNGJj\nYjUxYTNhNS0wMDAwLnVzLXNvdXRoLmNvbnRhaW5lcnMuYXBwZG9tYWluLmNsb3Vk\nMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEXwbwGLJXXc1jB5Gpo/+h9J+bHQt2\n6sTC6sGOrYN/CbMAZOM7jQN59peKYVY6nDd5WICJ3NIGdFMuQdTruoKfPKOB2TCB\n1jCB0wYDVR0RBIHLMIHIgmJuNzNlMTVhLXZvdGVyY2EuaWtzLXRzZTMtMGRjNDkz\nODdhNWMxZGFlNGEyNjc2ZDRiY2I1MWEzYTUtMDAwMC51cy1zb3V0aC5jb250YWlu\nZXJzLmFwcGRvbWFpbi5jbG91ZIJibjczZTE1YS12b3RlcmNhLmlrcy10c2UzLTBk\nYzQ5Mzg3YTVjMWRhZTRhMjY3NmQ0YmNiNTFhM2E1LTAwMDAudXMtc291dGguY29u\ndGFpbmVycy5hcHBkb21haW4uY2xvdWQwCgYIKoZIzj0EAwIDRgAwQwIgLRLYGwAw\nLgwbZloiEB9FcvDEa297rX61tbur3BzYxAUCH2KaPPSB/XJMrCz+MByoqLOQ7E2r\n9x3mW3hJWqfCPB4=\n-----END CERTIFICATE-----\n"
+                ]
+            },
+            "httpOptions": {
+                "verify": false
+            }
+        }
+        
+    }
+}
